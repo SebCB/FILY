@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Felíz Tiempo Juntos, Mi Amor</title>
+        <link rel="stylesheet" href="styles1.css">
+    </head>
+    <body>
+        <h1>Felíz Tiempo Juntos, Mi Corazón 🤍</h1>
+        <div class="counter" id="counter"></div>
+    </p><div class="mensaje">Eres lo mejor en todo el mundo. ¡Te amo! 💕</div>
+
+        <h2>Nuestros momentos juntos</h2>
+        <div class="galeria" id="galeria">
+            <img src="IMG_0097.JPEG" alt="Foto 1">
+            <img src="foto2.JPEG" alt="Foto 2">
+            <img src="IMG_0136.JPEG" alt="Foto 3">
+        </div>
+
+        <button id="mensajeBtn">Mostrar mensaje</button>
+        <div id="mensajeEspecial">
+            <div class="modal-content">
+                <span class="cerrar">&times;</span>
+                <p>
+                    Quise construir esto para tí y puedes verlo el tiempo que quieras, solo te pido que siga avanzando mientras estamos juntos. El amor es muuuuuy raro, puede hacer que te pierdas como para dibujarte miles de mariposas, pero a mi me gusta perderme en ti. ❤️
+
+                </p>Espero quedemos en vernos pronto, estoy muy enamorado de ti hermosa, amo verte y amo todo de ti, pero haces que hasta la fecha me de vergüenza decirte que quiero verte al otro día o que quiero seguirte viendo en el mismo lugar y que no debes separarte ya nunca de mi. Te amo con toda mi alma 💕
+
+                </p>-Sebastián. 
+
+                </p>
+            </div>
+        </div>
+
+        <audio id="backgroundMusic" loop>
+            <source src="https://www.dropbox.com/scl/fi/3dys5ps98d2lwoks7qxdh/Your-Lie-In-April.mp3?rlkey=xa87glm2x90k5gnwu4yybwoks&raw=1" type="audio/mp3"></source>
+            Tu navegador no soporta audio HTMLS 
+        </audio>
+
+        <div id="controlMusica">
+            <button id="playBtn">▶️</button>
+            <button id="stopBtn">⏸️</button>
+        </div>
+
+        <!--<h2>Un video especial para ti</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UVzVUDXoi0Y?si=ukRd2Ao5R2SeJAjT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>-->
+
+        <script>
+            function calcularTiempoJuntos() {
+                const fechaInicio = new Date("2024-12-30T00:00:00Z");
+                const ahora = new Date();
+                const diferencia = ahora - fechaInicio;
+                const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+                const horas = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
+                const minutos = Math.floor((diferencia / (1000 * 60)) % 60);
+                const segundos = Math.floor((diferencia / 1000) % 60);
+
+                document.getElementById("counter").innerText = `Llevamos juntos ${dias} días, ${horas} horas, ${minutos} minutos y ${segundos} segundos.`;
+            }
+            setInterval(calcularTiempoJuntos, 1000);
+        </script>
+
+        <script type="module" src="script1.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+        <div id="app"></div>
+
+    </body>
+</html>
